@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    var numberOfBlocks = $(".main_new").children().length; // Получаем количество блоков внутри "main_new"
+    var numberOfBlocks = $(".main_new").children().length;
     if (numberOfBlocks > 1) {
-        $(".navigation").show(); // Если блоков больше одного, показываем блок навигации
+        $(".navigation").show();
     } else {
-        $(".navigation").hide(); // Если блоков только один или меньше, скрываем блок навигации
+        $(".navigation").hide(); 
     }
 
     $(".main_new").slick({
@@ -17,5 +17,15 @@ $(document).ready(function () {
         prevArrow: $("#prev_arrow"),
         nextArrow: $("#next_arrow"),
         vertical: false
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var menuItems = document.querySelectorAll('.menu a');
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+     
+            document.getElementById('burger-checkbox').checked = false;
+        });
     });
 });

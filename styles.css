@@ -14,7 +14,7 @@ body {
 /* main screen  */
 
 .header {
-  background: url(img/background_main.png) center/cover no-repeat;
+  background: url(/img/background_main.png) center/cover no-repeat;
   padding: 30px 0;
   height: 100vh;
   background-position: center;
